@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp"
+    android:paddingRight="20dp"
+    tools:context=".registration.AddAddressActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:fontFamily="@font/open"
+                android:id="@+id/title"
+                android:layout_below="@+id/imageView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="#df3c31"
+                android:text="Add address" />
+            <EditText
+                android:fontFamily="@font/open"
+                android:id="@+id/first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First name"
+                android:text="cbda922ca6e017301b3c2fca5f5565db "
+                android:inputType="text"
+                android:layout_below="@+id/address"
+                android:layout_marginTop="10dp"
+                android:selectAllOnFocus="true" />
+            <EditText
+                android:fontFamily="@font/open"
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:text = "cbda922ca6e017301b3c2fca5f5565db"
+                android:inputType="text"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="10dp"
+                android:selectAllOnFocus="true" />
+
+            <EditText
+                android:fontFamily="@font/open"
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City"
+                android:text="cbda922ca6e017301b3c2fca5f5565db"
+                android:inputType="text"
+                android:layout_below="@+id/address"
+                android:layout_marginTop="10dp"
+                android:selectAllOnFocus="true" />
+            <EditText
+
+                android:fontFamily="@font/open"
+                android:id="@+id/pin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="PinCode"
+                android:text="cbda922ca6e017301b3c2fca5f5565db"
+                android:inputType="text"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="10dp"
+                android:selectAllOnFocus="true" />
+            <EditText
+                android:fontFamily="@font/open"
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:text="cbda922ca6e017301b3c2fca5f5565db"
+                android:inputType="text"
+                android:layout_below="@+id/pin"
+                android:layout_marginTop="10dp"
+                android:selectAllOnFocus="true" />
+            <EditText
+                android:fontFamily="@font/open"
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="State"
+                android:inputType="text"
+                android:layout_below="@+id/city"
+                android:layout_marginTop="10dp"
+                android:selectAllOnFocus="true" />
+
+
+            <EditText
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/state"
+                android:hint="Country"
+                android:text="cbda922ca6e017301b3c2fca5f5565db"
+                android:layout_marginTop="10dp"
+                android:selectAllOnFocus="true" />
+            <EditText
+                android:id="@+id/landmrk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/country"
+                android:hint="Landmark(optional)"
+                android:layout_marginTop="10dp"
+                android:selectAllOnFocus="true" />
+                            <Button
+                                android:visibility="gone"
+                                android:layout_marginTop="30dp"
+                                android:id="@+id/saveadd"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:elevation="3dp"
+                                android:background="@drawable/button_bg"
+                                android:layout_below="@+id/landmrk"
+                                android:textColor="#f3a833"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                                android:text="save" />
+
+            <LinearLayout
+                android:id="@+id/paybox"
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_height="50dp">
+                <Button
+                    android:layout_weight="5"
+                    android:id="@+id/cod"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/landmrk"
+                    android:background="#f3a833"
+                    android:textColor="#FFFFFF"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:text="Cash on delivery" />
+
+                <Button
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_weight="5"
+                    android:id="@+id/checkout"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:textColor="#f3a833"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:text="Check Out Online" />
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

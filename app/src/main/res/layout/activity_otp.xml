@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.LoginActivity">
+    <RelativeLayout
+        android:id="@+id/rlpop"
+        android:padding="15dp"
+        android:gravity="center"
+        android:elevation="5dp"
+        android:background="@drawable/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/closeBtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/close"/>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_below="@+id/closeBtn"
+            android:src="@drawable/covishot" />
+
+        <TextView
+            android:textSize="18dp"
+            android:id="@+id/title"
+            android:layout_below="@+id/imageView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#df3c31"
+            android:text="Please enter OTP " />
+
+        <com.help.android.utility.OtpEditText
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/title"
+            android:id="@+id/phone_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:cursorVisible="false"
+            android:digits="1234567890"
+            android:inputType="number"
+            android:maxLength="6"
+            android:background="@android:color/transparent"
+            android:textIsSelectable="false"
+            android:textSize="20sp"/>
+
+
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#FFFFFF"
+            android:elevation="3dp"
+            android:background="@drawable/button_bg"
+            android:layout_below="@+id/phone_edit_text"
+            android:layout_marginTop="30dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:text="OTP" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/forgotPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/login"
+            android:textColor="#CCCCCC"
+            android:background="#00000000"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:text="Forgot Password?" />
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="8dp"
+            android:textAlignment="textEnd"
+            android:textStyle="bold"
+            android:textColor="#df3c31"
+            android:id="@+id/textView"
+            android:layout_alignBaseline="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forgotPass"
+            android:text="Resend"/>
+        <Button
+            android:visibility="gone"
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/forgotPass"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="#00000000"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textAlignment="viewEnd"
+            android:text="Register" />
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.help.android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.help.android.startup.FrescoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.help.android.login.LoginActivity"   android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="com.help.android.login.OTPActivity"></activity>
+        <activity android:name="com.help.android.fragments.CategoryActivity" />
+        <activity android:name=".fragments.CategoriesActivity" />
+        <activity android:name="com.help.android.options.OrderDetailActivity" />
+        <activity android:name="com.help.android.options.MyWishListActivity" />
+        <activity android:name="com.help.android.utility.PaymentActivity" />
+        <activity android:name="com.help.android.options.MyAccountActivity" />
+        <activity android:name="com.help.android.registration.AddAddressActivity" />
+        <activity android:name="com.help.android.registration.SignUpActivity" />
+        <activity android:name=".startup.TestActivity2" />
+        <activity android:name="com.help.android.startup.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".options.SearchResultsActivity" />
+        </activity>
+        <activity
+            android:name="com.help.android.startup.WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.help.android.startup.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity android:name="com.help.android.fragments.ViewPagerActivity" />
+        <activity android:name="com.help.android.product.ItemDetailsActivity" />
+        <activity
+            android:name="com.help.android.options.WishlistActivity"
+            android:label="@string/my_wishlist" />
+        <activity
+            android:name="com.help.android.options.CartListActivity"
+            android:label="@string/my_cart" />
+        <activity android:name="com.help.android.options.SearchResultActivity">
+
+            <!-- to identify this activity as "searchable.xml" -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name="com.help.android.miscellaneous.EmptyActivity" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_H6yRSKUBt3E68S" />
+    </application>
+
+</manifest>

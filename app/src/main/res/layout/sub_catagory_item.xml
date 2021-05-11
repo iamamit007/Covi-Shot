@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:id="@+id/con"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/gg"
+            android:id="@+id/image1"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+
+            android:layout_marginBottom="6dp"
+            android:id="@+id/view_all"
+
+            android:layout_alignParentBottom="true"
+            android:background="#40000C48"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:id="@+id/catagory_name"
+                android:textSize="12dp"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:text="view all"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <View
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="#eaeaea"
+            android:layout_alignParentRight="true"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#F6A907"
+            android:textAlignment="center"
+
+            android:text="name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+
+
+</LinearLayout>
